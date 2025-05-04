@@ -1,0 +1,65 @@
+.productsCon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); /* responsive columns */
+    gap: 20px; /* space between cards */
+    padding: 20px;
+    width: 85%;
+    margin: 10px auto;
+}
+.card {
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+.cardName{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+.card img{
+    width: 100%;
+    /* border: solid; */
+    height: 60%;
+}
+.card .cardPrice strong{
+    text-decoration: line-through;
+}
+.card .cardPrice{
+    margin-bottom: 5px;
+}
+.cardcart{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border: solid;
+    background-color: #1f541f;;
+}
+.addcart{
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border: solid;
+    padding: 10px;
+}
+
+.cardcart svg{
+    margin-bottom: -10px;
+    font-size: large;
+    /* color: #fff; */
+    margin-left: -15px;
+    z-index: -1; 
+    position: absolute;
+}
+.cardcart span{
+    margin-bottom: -10px;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+}

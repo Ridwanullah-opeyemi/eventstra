@@ -7,7 +7,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch("http://localhost:3001/products");
+                const res = await fetch("https://enentstar.onrender.com/products");
                 const data = await res.json();
                 setProducts(data.products);
             } catch (err) {

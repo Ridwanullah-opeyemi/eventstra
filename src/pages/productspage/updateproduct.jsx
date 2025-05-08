@@ -42,7 +42,7 @@ const UpdateProduct = () => {
         formData.append("description", product.description);
         if (image) formData.append("image", image);
 
-        const res = await fetch(`http://localhost:3001/update/${id}`, {
+        const res = await fetch(`https://enentstar.onrender.com/update/${id}`, {
             method: "PUT",
             body: formData,
         });

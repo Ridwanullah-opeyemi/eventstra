@@ -1,0 +1,57 @@
+.proCon{
+    /* border: solid; */
+    width: 85%;
+    padding: 20px;
+    margin-inline: auto;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.proCon form .inpbox{
+    /* border: solid; */
+    padding: 15px 0;
+}
+
+.proCon form .inpbox input, textarea{
+    width: 100%;
+    padding: 15px 5px;
+    font-weight: bold;
+    font-size: large;
+    border: #80808092 solid 1px;
+    border-radius: 10px;
+}
+
+.proCon form .btnCon button{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #f0eeeb;
+    color: #000;
+    font-weight: bold;
+}
+
+.proCon form .btnCon button:hover{
+    background-color: #fff;
+    border-radius: 5px;
+    border: double;
+}
+
+.imgconpreview {
+    border: solid 5px red;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.imgconpreview img{
+    width: 100%;
+    height: auto;
+}
+
+.proCon form .btnCon{
+    width: 120px;
+    /* border: solid; */
+    margin: 0 auto;
+}

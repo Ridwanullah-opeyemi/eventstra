@@ -1,5 +1,5 @@
 .NavCon{
-    border: solid;
+    /* border: solid; */
     /* font-family: 'Courier New', Courier, monospace; */
     background-color: #000;
     color: #fff;
@@ -31,18 +31,23 @@
     margin-bottom: -5px;
 }
 
+
 .NavinputCon{
     display: flex;
     align-items: center;
-    width: 80%;
-    border: solid;
-    margin: 20px auto;
+    width: 100%;
+    /* border: solid; */
+    padding: 0 200px ;
 }
 
+.NavuCon{
+    width: 85%;
+    margin: 20px auto;
+}
 .seletOpt{
     /* border: solid; */
     height: 50px;
-  background-color: #f7f7f7;
+    background-color: #f7f7f7;
     overflow: hidden;
     /* position: relative; */
     /* padding: 20px; */
@@ -57,10 +62,35 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.divfol{
+    align-items: center;
+    width: 100%;
+    /* border: solid; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.divfol a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+}
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* border: solid; */
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+}
 .seletOpt input{
     font-size: large;
     padding: 12px;
-    width: 73%;
+    width: 80%;
     /* border: none; */
 }
 
@@ -79,7 +109,7 @@
 
 .chat{
     border-radius: 50%;
-    border: solid;
+    /* border: solid; */
     width: 50px;
     height: 50px;
 }
@@ -91,15 +121,72 @@
 }
 
 @media (max-width: 600px) {
-    .seletOpt{
-        display: none;
+
+    .NavuCon .NavinputCon .seletOpt{
+        width: 80%;
+        /* border: solid; */
+        overflow: visible;
+    }
+
+    .NavuCon .NavinputCon .seletOpt input{
+        width: 110px;
+        border: solid #808080d1;
+        border-right: none;
+        border-left: none;
+    }
+
+    .NavuCon .NavinputCon .seletOpt select{
+        font-size: small;
+        font-weight: 100;
+    }
+
+    .prov a{
+        margin-left: -10px;
+    }
+
+    .NavLink{
+        /* border: solid; */
+        display: flex  ;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .NavuCon{
+        width: 100%;
     }
     .NavinputCon{
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .NavinputCon a{
+        width: 18%;
+    }
+
+    .NavinputCon a img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .divfol{
+        align-items: center;
+        width: 100%;
+        /* border: solid red;    */
+        padding: 8px;
         display: flex;
         justify-content: space-between;
-        width: 95%;
-        border: none
-        
+    }
+    .divfol a{
+        text-decoration: none;
+        font-size: smaller; 
+        font-weight: normal;
+    }
+    .divfol a:hover{
+        color: #ff0000da;
+        text-decoration: underline;
     }
 }
 
